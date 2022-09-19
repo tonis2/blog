@@ -1,0 +1,13 @@
+title: "blog"
+folder: "content/posts"
+repository: "/tonis2/blog"
+collections:
+    title: "posts"
+    label: "post"
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Description", name: "description", widget: "string" }
+      - { label: "Cover", name: "image", widget: "image" }
+      - { label: "Publish date", name: "date", widget: "datetime" }
+      - { label: "Content", name: "content", widget: "markdown" }
